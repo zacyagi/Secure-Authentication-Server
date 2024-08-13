@@ -1,7 +1,7 @@
-Introduction:
+
 In today's digital landscape, secure authentication and key management are paramount for safeguarding sensitive information and ensuring the integrity of systems. FastAPI, a modern web framework for building APIs with Python, provides robust tools for implementing authentication mechanisms and managing cryptographic keys effectively. This code demonstrates a secure authentication system using OAuth2, token-based authentication, and key management functionalities within FastAPI.
 
-Overview:
+
 This FastAPI-based application showcases:
 
 Authentication: Users can authenticate using their credentials (username and password), with passwords securely hashed using bcrypt.
@@ -14,7 +14,7 @@ Authentication: Utilizes OAuth2PasswordBearer for token-based authentication. Pa
 Token Generation: JWT tokens are created upon successful authentication, containing user information and expiration time.
 User Management: Users can retrieve their own information, and administrators can update client keys securely.
 Key Management: Administrative users can generate new server keys using OpenSSL, ensuring secure key rotation.
-Conclusion:
+
 This FastAPI application exemplifies best practices in secure authentication and key management. By leveraging modern cryptographic techniques and robust API frameworks like FastAPI, developers can build resilient and secure systems to protect sensitive data effectively.
 
 update_client_key: This function allows users to securely update their client keys. Both regular users and administrators can update client keys. While administrators can update any user's key, regular users can only update their own keys. Upon successful update, a new JWT (JSON Web Token) is generated for the user.
